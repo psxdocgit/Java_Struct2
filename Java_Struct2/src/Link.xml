@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="link" namespace="/link" extends="default">
+
+        <action name="Link" class="com.struct2.action.Link">
+            <result name="success">/WEB-INF/jsp/UserLogin.jsp</result>
+            <result name="input">/WEB-INF/jsp/Link.jsp</result>
+        </action>
+        
+        <!-- Add actions here -->
+    </package>
+</struts>
