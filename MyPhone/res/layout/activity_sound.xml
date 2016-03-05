@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" >
+
+        <Button
+            android1:id="@+id/sound_OK_btn"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_weight="0.55"
+            android1:onClick="btnClick"
+            android1:text="OK" />
+
+        <Button
+            android1:id="@+id/sound_CANCEL_btn"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_weight="0.55"
+            android1:onClick="btnClick"
+            android1:text="CANCEL" />
+
+        <Button
+            android1:id="@+id/sound_EDIT_btn"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_weight="0.55"
+            android1:onClick="btnClick"
+            android1:text="EDIT" />
+
+        <Button
+            android1:id="@+id/sound_BACK_btn"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_weight="0.55"
+            android1:onClick="btnClick"
+            android1:text="BACK" />
+
+    </LinearLayout>
+
+    <Switch
+        android1:id="@+id/sound_switch1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="时间1                                    " />
+
+    <TimePicker
+        android1:id="@+id/sound_timePicker1"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" />
+
+    <SeekBar
+        android1:id="@+id/sound_seekBar1"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" />
+
+    <Switch
+        android1:id="@+id/sound_switch2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="Switch2" />
+
+</LinearLayout>

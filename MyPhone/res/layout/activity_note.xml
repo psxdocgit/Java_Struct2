@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/noteCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="照会模式                                  " />
+
+        <Button
+            android:id="@+id/noteBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="noteBackBtnClick"
+            android:text="Back" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/noteLv"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true" >
+    </ListView>
+    
+</LinearLayout>

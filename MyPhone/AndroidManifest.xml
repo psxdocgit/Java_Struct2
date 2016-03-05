@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chen.my.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.chen.my.api.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chen.my.activity.note.NoteActivity"
+            android:label="@string/title_activity_note" >
+        </activity>
+        <activity
+            android:name="com.chen.my.activity.sound.SoundActivity"
+            android:label="@string/title_activity_sound" >
+        </activity>
+        
+        <service android:name="com.chen.my.service.MyService" />
+
+        <!-- 
+        <receiver android:name="com.chen.my.service.MyReceiver" >
+            <intent-filter android:priority= "2147483647">
+        -->
+                <!-- 自定义 广播-->
+                <!--<action android:name="android.provider.My.PHONE_SERVICE_RECEIVED" />-->
+                <!-- 接收电池电量变化广播 -->
+                <!--<action android:name="android.intent.action.BATTERY_CHANGED"/>-->
+                <!-- 接收开机启动广播 -->
+                <!--
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                
+            </intent-filter>
+        </receiver>
+         -->
+</application>
+
+</manifest>
